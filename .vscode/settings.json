@@ -1,0 +1,10 @@
+{
+    "extensions.ignoreRecommendations": true,
+    "C_Cpp.default.configurationProvider": "particle.particle-vscode-core",
+    "files.associations": {
+        "*.ino": "cpp"
+    },
+    "particle.targetDevice": "Sleepyboy",
+    "particle.targetPlatform": "p2",
+    "particle.firmwareVersion": "5.8.0"
+}

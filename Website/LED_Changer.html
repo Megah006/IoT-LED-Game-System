@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Color Changer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>
+            <a href="Main.html" class="navigation-link">PixelPlay</a>
+            <a href="Rankings.html" class="navigation-link">Rankings</a>
+            <a href="LED_Changer.html" class="navigation-link">LED Changer</a>
+        </h1>
+        <h2>
+            LED Color Changer
+        </h2>
+        <div class="slider-container">
+            <div class="slider-controls">
+                <label for="red">Red</label>
+                <input type="range" id="red" min="0" max="255" value="0">
+                <label for="green">Green</label>
+                <input type="range" id="green" min="0" max="255" value="0">
+                <label for="blue">Blue</label>
+                <input type="range" id="blue" min="0" max="255" value="0">
+            </div>
+            <div class="led-container-changer">
+                <div id="led-changer" class="led-changer"></div>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="sendButton" class="send-button">Send to Photon</button>
+        </div>
+        <div class="hero">
+            <h4>
+                This will change the LED color for various game modes, but various game modes randomize the color after each round. 
+                If you are in the lobby the middle LED will show the color you will play with!
+            </h4>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

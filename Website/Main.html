@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPlay</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>
+            <a href="Main.html" class="navigation-link">PixelPlay</a>
+            <a href="Rankings.html" class="navigation-link">Rankings</a>
+            <a href="LED_Changer.html" class="navigation-link">LED Changer</a>
+        </h1>
+        <div>
+            <h2>
+                Welcome to PixelPlay
+            </h2>
+        </div>
+        <div class="led-container">
+            <div id="led1" class="led"></div>
+            <div id="led2" class="led"></div>
+            <div id="led3" class="led"></div>
+            <div id="led4" class="led"></div>
+            <div id="led5" class="led"></div>
+        </div>
+        <div>
+            <h3>
+                Game Modes
+            </h3>
+        </div>
+    <!-- Segmented Slider Section -->
+    <div class="slider">
+        <span class="tab active" onclick="showDefinition('def1')">What is PixelPlay?</span>
+        <span class="tab" onclick="showDefinition('def2')">Reaction Game</span>
+        <span class="tab" onclick="showDefinition('def3')">Memory Game</span>
+        <span class="tab" onclick="showDefinition('def4')">Reaction and Memory Game</span>
+        <span class="tab" onclick="showDefinition('def5')">Whack-A-Mole</span>
+    </div>
+    <div class="images-container">
+        <img id="imageDef2" class="game-mode-image" src="assets/ImageDef2.png" alt="Game Mode 2">
+        <img id="imageDef3" class="game-mode-image" src="assets/ImageDef3.png" alt="Game Mode 3">
+        <img id="imageDef4" class="game-mode-image" src="assets/ImageDef4.png" alt="Game Mode 4">
+        <img id="imageDef5" class="game-mode-image" src="assets/ImageDef5.png" alt="Game Mode 5">
+    </div>
+
+    <div id="def1" class="definition active">
+        <p>
+            PixelPlay is a game system that uses a microcontroller, five LEDs, and five buttons to allow for four different game modes. 
+            Each mode has its own set of challenges, such as, testing and improving memory, reaction time, and coordination. 
+            You start in what is know as "the Lobby" until you press one of the buttons.
+            Anyone can create and play PixelPlay by putting together the hardware and uploading the code to your microcontroller.
+        </p>
+    </div>
+    <div id="def2" class="definition">
+        <p>
+            The Reaction Game is the first game mode of PixelPlay. 
+            It is played by pressing the button corresponding to the green LED in the lobby. 
+            The goal is to press the corresponding button when one of the five LEDs lights up randomly. After the player presses the button correctly for fifteen LEDs in a row, the next round starts, and the time limit is reduced. 
+            If the player fails to press the button in time, they are returned to the lobby, and their round is displayed.
+        </p>
+    </div>
+    <div id="def3" class="definition">
+        <p>
+            The Memory Game is the second game mode of PixelPlay.
+            It is played by pressing the button corresponding to the purple LED in the lobby.
+            The goal is to memorize a sequence of random LEDs, with the number of LEDs in the sequence increasing with each round. Each time the player correctly repeats the sequence, 
+            they move on to the next round, where the sequence stays the same, but one additional random LED is added to the end.
+        </p>
+    </div>
+    <div id="def4" class="definition">
+        <p>
+            The Reaction and Memory Game is the third game mode of PixelPlay.
+            It is played by pressing the button corresponding to the blue LED in the lobby.
+            It works by presenting the player with a sequence of four, six, or eight LEDs, depending on the round. 
+            The player must then repeat the sequence in time to move on to the next round, with the time limit decreasing each round.
+        </p>
+    </div>
+    <div id="def5" class="definition">
+        <p>
+            Whack-A-Mole is the fourth game mode of PixelPlay. It is played by pressing the button corresponding to the red LED in the lobby. 
+            The goal is to press the button when one of the five LEDs lights up randomly. 
+            The time limit is thirty seconds, and the objective is to press as many buttons corresponding to the LEDs as possible within the allotted time.
+        </p>
+    </div>
+</div>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
