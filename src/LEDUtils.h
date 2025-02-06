@@ -1,8 +1,6 @@
 #ifndef LED_UTILS_H
 #define LED_UTILS_H
 
-#include <String.h>
-
 // This is used to change the LED colors for diffrent game modes, 
 // they can be changed through the provided LED_Changer HTML.
 int setRGB(String command); 
