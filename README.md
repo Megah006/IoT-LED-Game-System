@@ -27,7 +27,7 @@ This project was made using a Photon 2 Particle microcontroller, and I recommend
 
 To connect your Photon 2 to the website(or other microcontroller), you will need to input your device ID and access token in the [script.js](Website/script.js) file. If you plan on using a different microcontroller, you may encounter issues with this code and will require some editing; however, the logic should remain the same.
 
-Here is my wiring diagram—feel free to wire it as shown:
+Here is my wiring diagram, feel free to wire it as shown:
 
 ![PixelPlay Wiring](circuit_image.png)
 
